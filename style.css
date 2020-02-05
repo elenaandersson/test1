@@ -1,0 +1,63 @@
+body, html{
+  height: 100%;
+  width: 100%;
+  font-family:font-family: 'Montserrat', sans-serif;
+  /* Background image, full page */
+  background: url(header.jpg) no-repeat center center fixed;
+  background-size: cover;
+ }
+
+/* makes the container set to the center of the page, and make the
+height of the container to be the same as the entire page*/
+ .container{
+   height: 100%;
+ }
+
+ h1{
+   font-size: 3rem;
+   color: #e2dbdb;
+ }
+ /* Make a horisontal line in same color as button */
+ hr{
+   border-color: #FFC928;
+   border-width: 0.3rem;
+   max-width: 90px;
+ }
+/* space between heading 1 and button  */
+.buffer{
+  height: 10rem;
+}
+
+ /* Make button larger */
+.btn-xl{
+  padding: 1rem 2rem;
+}
+/* Make button round and uppercase */
+.btn{
+  border-radius: 200px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* Change button color */
+ .btn-light{
+   background-color: #FFC928;
+   border-color: #FFC928;
+   color: 090702#;
+ }
+/* Change button color while hover or in focus*/
+ .btn-light:hover, .btn-light:focus {
+    background-color: #FFBF00;
+    border-color: #FFC928;
+    border-width: 2px;
+    color: 090702#;
+ }
+
+ /* Extra large devices (large desktops, 1200px and up)
+ make sure the content is in the center of the page at all time,
+ and dont change at any point */
+@media (min-width: 1200px) {
+.container {
+  justify-content: center;
+}
+
+ }
